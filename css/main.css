@@ -13,8 +13,14 @@ table {
     outline: black 3px solid;
     border-collapse: collapse;
 }
+
+tr {
+    height: 73px;
+}
+
 td {
-    text-align: center;
+    height: 73px;
+    width: 75px;
 }
 
 .container {
@@ -43,11 +49,11 @@ td {
 }
 
 .black {
-    background: black;
+    background: #235E0C;
     color: white;
 }
 
 .white {
-    background: white;
+    background: #D0D6B3;
     color: black;
 }
