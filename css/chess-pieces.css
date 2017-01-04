@@ -1,70 +1,70 @@
-.kingW {
+#kingW {
     background: url('../img/chess-pieces.svg') no-repeat -5px -5px;
     width: 35px;
     height: 36px;
 }
 
-.queenW {
+#queenW {
     background: url('../img/chess-pieces.svg') no-repeat -48px -4px;
     width: 39px;
     height: 37px;
 }
 
-.bishopW {
+#bishopW {
     background: url('../img/chess-pieces.svg') no-repeat -95px -4px;
     width: 35px;
     height: 36px;
 }
 
-.knightW {
+#knightW {
     background: url('../img/chess-pieces.svg') no-repeat -140px -6px;
     width: 34px;
     height: 34px;
 }
 
-.rookW {
+#rookW {
     background: url('../img/chess-pieces.svg') no-repeat -140px -6px;
     width: 34px;
     height: 34px;
 }
 
-.pawnW {
+#pawnW {
     background: url('../img/chess-pieces.svg') no-repeat -234px -8px;
     width: 26px;
     height: 33px;
 }
 
-.kingB {
+#kingB {
     background: url('../img/chess-pieces.svg') no-repeat -5px -50px;
     width: 35px;
     height: 36px;
 }
 
-.queenB {
+#queenB {
     background: url('../img/chess-pieces.svg') no-repeat -48px -50px;
     width: 39px;
     height: 37px;
 }
 
-.bishopB {
+#bishopB {
     background: url('../img/chess-pieces.svg') no-repeat -95px -49px;
     width: 35px;
     height: 36px;
 }
 
-.knightB {
+#knightB {
     background: url('../img/chess-pieces.svg') no-repeat -140px -51px;
     width: 34px;
     height: 34px;
 }
 
-.rookB {
+#rookB {
     background: url('../img/chess-pieces.svg') no-repeat -188px -53px;
     width: 29px;
     height: 32px;
 }
 
-.pawnB {
+#pawnB {
     background: url('../img/chess-pieces.svg') no-repeat -234px -53px;
     width: 26px;
     height: 33px;

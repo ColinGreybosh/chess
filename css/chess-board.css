@@ -1,0 +1,33 @@
+table {
+    height: 600px;
+    width: 600px;
+    outline: black 3px solid;
+    border-collapse: collapse;
+}
+
+    tr {
+        height: 73px;
+    }
+
+    td {
+        height: 73px;
+        width: 75px;
+    }
+
+.occupied {
+    margin: 0 auto;
+}
+
+.empty {
+
+}
+
+.black {
+    background: #235E0C;
+    color: white;
+}
+
+.white {
+    background: #D0D6B3;
+    color: black;
+}
