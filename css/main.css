@@ -4,7 +4,7 @@ html, body {
 
 body {
     margin: 0;
-    background: url(http://www.flauminc.com/server15-cdn/2015/12/22/free-seamless-wood-texture-free-seamless-background-textures-84e299488ee9e849.jpg);
+    background: url(../img/wood.jpg);
 }
 
 .container {
@@ -31,3 +31,36 @@ body {
         justify-content: center;
         align-items: center;
     }
+
+table {
+    height: 600px !important;
+    width: 600px !important;
+    outline: black 3px solid;
+    border-collapse: collapse;
+}
+
+    tr {
+        height: 75px !important;
+    }
+
+    td {
+        height: 75px !important;
+        width: 75px !important;
+        padding: 0;
+    }
+
+.occupied, .empty {
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+}
+
+.black {
+    background: #235E0C;
+    color: white;
+}
+
+.white {
+    background: #D0D6B3;
+    color: black;
+}

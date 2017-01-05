@@ -1,327 +1,396 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>Chess</title>
-    <!-- Local and Windows Links -->
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/chess-pieces.css">
-    <link rel="stylesheet" href="css/chess-board.css">
-    <link rel="icon" type="image/png" href="icon.png">
-    <!-- Web and Unix Links -->
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/chess-pieces.css">
-    <link rel="stylesheet" href="/css/chess-board.css">
-    <link rel="icon" type="image/png" href="/icon.png">
-    <!-- Online References -->
-    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-</head>
-<body>
-    <!-- Header for game start, restart, etc. -->
-    <div class = "header">
-        <div></div>
-        <div></div>
-        <div></div>
-    </div>
-    <!-- Webpage Content -->
-    <div class = "container">
-        <!-- SideBar Content -->
-        <div class = "flex">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quae exercitationem ea illo, inventore minima possimus aliquid ipsum unde nam repudiandae quia sunt distinctio ut veritatis tempore ullam voluptates necessitatibus!</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora asperiores quidem voluptate dolor fuga culpa aperiam accusamus hic consequatur excepturi delectus consectetur atque vel, maxime doloremque reprehenderit quisquam harum. Blanditiis.</div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+        <title>Chess</title>
+
+        <!-- Local and Windows Links -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/chess-pieces.css">
+        <link rel="icon" type="image/png" href="icon.png">
+
+        <!-- Web and Unix Links -->
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" href="/css/chess-pieces.css">
+        <link rel="icon" type="image/png" href="/icon.png">
+
+        <!-- Online References -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+    </head>
+    <body>
+        <!-- Header for game start, restart, etc. -->
+        <div class="header">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-        <!-- Container For Board -->
-        <div class = "flexCenter">
-            <!-- Table used to create chess board -->
-            <table>
-                <!-- Rank 8 -->
-                <tr>
-                    <!-- a8 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "rookB"></div>
-                    </td>
-                    <!-- b8 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "knightB"></div>
-                    </td>
-                    <!-- c8 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "bishopB"></div>
-                    </td>
-                    <!-- d8 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "queenB"></div>
-                    </td>
-                    <!-- e8 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "kingB"></div>
-                    </td>
-                    <!-- f8 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "bishopB"></div>
-                    </td>
-                    <!-- g8 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "knightB"></div>
-                    </td>
-                    <!-- h8 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "rookB"></div>
-                    </td>
-                </tr>
-                <!-- Rank 7 -->
-                <tr>
-                    <!-- a7 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "pawnB"></div>
-                    </td>
-                    <!-- b7 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "pawnB"></div>
-                    </td>
-                    <!-- c7 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "pawnB"></div>
-                    </td>
-                    <!-- d7 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "pawnB"></div>
-                    </td>
-                    <!-- e7 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "pawnB"></div>
-                    </td>
-                    <!-- f7 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "pawnB"></div>
-                    </td>
-                    <!-- g7 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "pawnB"></div>
-                    </td>
-                    <!-- h7 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "pawnB"></div>
-                    </td>
-                </tr>
-                <!-- Rank 6 -->
-                <tr>
-                    <!-- a6 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- b6 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "rookB"></div>
-                    </td>
-                    <!-- c6 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- d6 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- e6 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- f6 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- g6 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- h6 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                </tr>
-                <!-- Rank 5 -->
-                <tr>
-                    <!-- a5 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- b5 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- c5 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- d5 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- e5 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- f5 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- g5 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- h5 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                </tr>
-                <!-- Rank 4 -->
-                <tr>
-                    <!-- a4 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- b4 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- c4 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- d4 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- e4 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- f4 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- g4 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- h4 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                </tr>
-                <!-- Rank 3 -->
-                <tr>
-                    <!-- a3 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- b3 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- c3 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- d3 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- e3 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- f3 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- g3 -->
-                    <td class = "black">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                    <!-- h3 -->
-                    <td class = "white">
-                        <div class = "empty" id = "empty"></div>
-                    </td>
-                </tr>
-                <!-- Rank 2 -->
-                <tr>
-                    <!-- a2 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "pawnW"></div>
-                    </td>
-                    <!-- b2 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "pawnW"></div>
-                    </td>
-                    <!-- c2 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "pawnW"></div>
-                    </td>
-                    <!-- d2 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "pawnW"></div>
-                    </td>
-                    <!-- e2 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "pawnW"></div>
-                    </td>
-                    <!-- f2 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "pawnW"></div>
-                    </td>
-                    <!-- g2 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "pawnW"></div>
-                    </td>
-                    <!-- h2 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "pawnW"></div>
-                    </td>
-                </tr>
-                <!-- Rank 1 -->
-                <tr>
-                    <!-- a1 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "rookW"></div>
-                    </td>
-                    <!-- b1 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "knightW"></div>
-                    </td>
-                    <!-- c1 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "bishopW"></div>
-                    </td>
-                    <!-- d1 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "queenW"></div>
-                    </td>
-                    <!-- e1 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "kingW"></div>
-                    </td>
-                    <!-- f1 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "bishopW"></div>
-                    </td>
-                    <!-- g1 -->
-                    <td class = "black">
-                        <div class = "occupied" id = "knightW"></div>
-                    </td>
-                    <!-- h1 -->
-                    <td class = "white">
-                        <div class = "occupied" id = "rookW"></div>
-                    </td>
-                </tr>
-            </table>
+
+        <!-- Webpage Content -->
+        <div class="container">
+            <!-- SideBar Content -->
+            <div class="flex">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab quae exercitationem ea illo, inventore minima possimus aliquid ipsum unde nam repudiandae quia sunt distinctio ut veritatis tempore ullam voluptates necessitatibus!</div>
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora asperiores quidem voluptate dolor fuga culpa aperiam accusamus hic consequatur excepturi delectus consectetur atque vel, maxime doloremque reprehenderit quisquam harum. Blanditiis.</div>
+            </div>
+
+            <!-- Container For Board -->
+            <div class="flexCenter">
+                <!-- Table used to create chess board -->
+                <table>
+                    <!-- Rank 8 -->
+                    <tr>
+                        <!-- a8 -->
+                        <td class="white">
+                            <div class="occupied" id="rookB"></div>
+                        </td>
+
+                        <!-- b8 -->
+                        <td class="black">
+                            <div class="occupied" id="knightB"></div>
+                        </td>
+
+                        <!-- c8 -->
+                        <td class="white">
+                            <div class="occupied" id="bishopB"></div>
+                        </td>
+
+                        <!-- d8 -->
+                        <td class="black">
+                            <div class="occupied" id="queenB"></div>
+                        </td>
+
+                        <!-- e8 -->
+                        <td class="white">
+                            <div class="occupied" id="kingB"></div>
+                        </td>
+
+                        <!-- f8 -->
+                        <td class="black">
+                            <div class="occupied" id="bishopB"></div>
+                        </td>
+
+                        <!-- g8 -->
+                        <td class="white">
+                            <div class="occupied" id="knightB"></div>
+                        </td>
+
+                        <!-- h8 -->
+                        <td class="black">
+                            <div class="occupied" id="rookB"></div>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 7 -->
+                    <tr>
+                        <!-- a7 -->
+                        <td class="black">
+                            <div class="occupied" id="pawnB"></div>
+                        </td>
+
+                        <!-- b7 -->
+                        <td class="white">
+                            <div class="occupied" id="pawnB"></div>
+                        </td>
+
+                        <!-- c7 -->
+                        <td class="black">
+                            <div class="occupied" id="pawnB"></div>
+                        </td>
+
+                        <!-- d7 -->
+                        <td class="white">
+                            <div class="occupied" id="pawnB"></div>
+                        </td>
+
+                        <!-- e7 -->
+                        <td class="black">
+                            <div class="occupied" id="pawnB"></div>
+                        </td>
+
+                        <!-- f7 -->
+                        <td class="white">
+                            <div class="occupied" id="pawnB"></div>
+                        </td>
+
+                        <!-- g7 -->
+                        <td class="black">
+                            <div class="occupied" id="pawnB"></div>
+                        </td>
+
+                        <!-- h7 -->
+                        <td class="white">
+                            <div class="occupied" id="pawnB"></div>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 6 -->
+                    <tr>
+                        <!-- a6 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- b6 -->
+                        <td class="black">
+                            <div class="occupied" id="rookB"></div>
+                        </td>
+
+                        <!-- c6 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- d6 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- e6 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- f6 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- g6 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- h6 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 5 -->
+                    <tr>
+                        <!-- a5 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- b5 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- c5 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- d5 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- e5 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- f5 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- g5 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- h5 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 4 -->
+                    <tr>
+                        <!-- a4 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- b4 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- c4 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- d4 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- e4 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- f4 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- g4 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- h4 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 3 -->
+                    <tr>
+                        <!-- a3 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- b3 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- c3 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- d3 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- e3 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- f3 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- g3 -->
+                        <td class="black">
+                            <div class="empty" id="empty"></div>
+                        </td>
+
+                        <!-- h3 -->
+                        <td class="white">
+                            <div class="empty" id="empty"></div>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 2 -->
+                    <tr>
+                        <!-- a2 -->
+                        <td class="white">
+                            <div class="occupied" id="pawnW"></div>
+                        </td>
+
+                        <!-- b2 -->
+                        <td class="black">
+                            <div class="occupied" id="pawnW"></div>
+                        </td>
+
+                        <!-- c2 -->
+                        <td class="white">
+                            <div class="occupied" id="pawnW"></div>
+                        </td>
+
+                        <!-- d2 -->
+                        <td class="black">
+                            <div class="occupied" id="pawnW"></div>
+                        </td>
+
+                        <!-- e2 -->
+                        <td class="white">
+                            <div class="occupied" id="pawnW"></div>
+                        </td>
+
+                        <!-- f2 -->
+                        <td class="black">
+                            <div class="occupied" id="pawnW"></div>
+                        </td>
+
+                        <!-- g2 -->
+                        <td class="white">
+                            <div class="occupied" id="pawnW"></div>
+                        </td>
+
+                        <!-- h2 -->
+                        <td class="black">
+                            <div class="occupied" id="pawnW"></div>
+                        </td>
+                    </tr>
+
+                    <!-- Rank 1 -->
+                    <tr>
+                        <!-- a1 -->
+                        <td class="black">
+                            <div class="occupied" id="rookW"></div>
+                        </td>
+
+                        <!-- b1 -->
+                        <td class="white">
+                            <div class="occupied" id="knightW"></div>
+                        </td>
+
+                        <!-- c1 -->
+                        <td class="black">
+                            <div class="occupied" id="bishopW"></div>
+                        </td>
+
+                        <!-- d1 -->
+                        <td class="white">
+                            <div class="occupied" id="queenW"></div>
+                        </td>
+
+                        <!-- e1 -->
+                        <td class="black">
+                            <div class="occupied" id="kingW"></div>
+                        </td>
+
+                        <!-- f1 -->
+                        <td class="white">
+                            <div class="occupied" id="bishopW"></div>
+                        </td>
+
+                        <!-- g1 -->
+                        <td class="black">
+                            <div class="occupied" id="knightW"></div>
+                        </td>
+
+                        <!-- h1 -->
+                        <td class="white">
+                            <div class="occupied" id="rookW"></div>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- SideBar Content -->
+            <div class="flex">
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nam veniam consequatur aperiam officia tenetur, consectetur nihil, nostrum voluptatum fugit sint! Velit, cumque? Optio illo reprehenderit, eligendi repellat officia dicta.</div>
+
+                <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id, optio cumque quam aliquam corporis expedita sit ad odit ab velit quod, reiciendis consectetur aliquid molestiae vel explicabo illo vero?</div>
+            </div>
         </div>
-        <!-- SideBar Content -->
-        <div class = "flex">
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum nam veniam consequatur aperiam officia tenetur, consectetur nihil, nostrum voluptatum fugit sint! Velit, cumque? Optio illo reprehenderit, eligendi repellat officia dicta.</div>
-            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut id, optio cumque quam aliquam corporis expedita sit ad odit ab velit quod, reiciendis consectetur aliquid molestiae vel explicabo illo vero?</div>
-        </div>
-    </div>
-</body>
+    </body>
 </html>
