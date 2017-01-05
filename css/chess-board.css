@@ -1,25 +1,24 @@
 table {
-    height: 600px;
-    width: 600px;
+    height: 600px !important;
+    width: 600px !important;
     outline: black 3px solid;
     border-collapse: collapse;
 }
 
     tr {
-        height: 73px;
+        height: 75px !important;
     }
 
     td {
-        height: 73px;
-        width: 75px;
+        height: 75px !important;
+        width: 75px !important;
+        padding: 0;
     }
 
-.occupied {
+.occupied, .empty {
     margin: 0 auto;
-}
-
-.empty {
-
+    height: 50px;
+    width: 50px;
 }
 
 .black {
