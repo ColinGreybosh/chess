@@ -55,6 +55,22 @@ table {
     width: 50px;
 }
 
+    .occupied a {
+        height: 75px;
+        width: 75px;
+    }
+
+    .empty a {
+        height: 0;
+        width: 0;
+    }
+
+.chess-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .black {
     background: #235E0C;
     color: white;
@@ -63,10 +79,4 @@ table {
 .white {
     background: #D0D6B3;
     color: black;
-}
-
-.chess-link {
-    display: block;
-    width: 100%;
-    height: 100%;
 }
