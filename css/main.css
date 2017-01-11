@@ -8,37 +8,42 @@ body {
 }
 
 .header {
-    display: flex;
-    align-content: space-between;
+    position: absolute;
+    width: 100%;
     margin: 0;
-    margin-top: 0.5rem;
     width: 100%;
 }
-
-    .header .button {
-        margin: 0.1rem;
-        padding: 0.3rem;
-        width: 33.33%;
-        text-align: center;
-        background: #FAFAFA;
-        outline: 3px solid #DEDEDE;
+    .hContainer {
+        display: flex;
+        justify-content: space-between;
+        float: right;
+        width: 50%;
+        margin: 0;
     }
-
-        .button a {
-            margin: 0.25rem;
-            width: 100%;
-            height: 100%;
-            line-height: 100%;
-            color: black;
-            text-decoration: none;
+        .header .button {
+            margin: 0.1rem;
+            padding: 0.3rem;
+            width: 33.33%;
+            text-align: center;
+            background: #FAFAFA;
+            outline: 3px solid #DEDEDE;
         }
+            .button a {
+                margin: 0.25rem;
+                width: 100%;
+                height: 100%;
+                line-height: 100%;
+                color: black;
+                text-decoration: none;
+            }
 
 .container {
     display: flex;
     justify-content: space-around;
     height: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
 }
-
     .flex {
         display: flex;
         flex-direction: column;
@@ -49,8 +54,9 @@ body {
         text-shadow: 1px 1px #AAA;
         font-size: 1.4rem;
         font-family: "Oswald", sans-serif;
+        line-height: 1.4;
+        max-width: 400px:
     }
-
     .flexCenter {
         height: 100%;
         display: flex;
@@ -64,11 +70,9 @@ table {
     outline: black 3px solid;
     border-collapse: collapse;
 }
-
     tr {
         height: 75px !important;
     }
-
     td {
         height: 75px !important;
         width: 75px !important;
@@ -81,7 +85,6 @@ table {
     height: 50px;
     width: 50px;
 }
-
     .empty .chess-link {
         height: 0;
         width: 0;
