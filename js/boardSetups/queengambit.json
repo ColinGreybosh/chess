@@ -1,0 +1,578 @@
+{
+    "a1": {
+        "file": "a",
+        "fileNum": 0,
+        "id": "a1",
+        "occupied": true,
+        "piece": "rookW",
+        "rank": "1",
+        "rankNum": 0
+    },
+    "b1": {
+        "file": "b",
+        "fileNum": 1,
+        "id": "b1",
+        "occupied": true,
+        "piece": "knightW",
+        "rank": "1",
+        "rankNum": 0
+    },
+    "c1": {
+        "file": "c",
+        "fileNum": 2,
+        "id": "c1",
+        "occupied": true,
+        "piece": "bishopW",
+        "rank": "1",
+        "rankNum": 0
+    },
+    "d1": {
+        "file": "d",
+        "fileNum": 3,
+        "id": "d1",
+        "occupied": true,
+        "piece": "queenW",
+        "rank": "1",
+        "rankNum": 0
+    },
+    "e1": {
+        "file": "e",
+        "fileNum": 4,
+        "id": "e1",
+        "occupied": true,
+        "piece": "kingW",
+        "rank": "1",
+        "rankNum": 0
+    },
+    "f1": {
+        "file": "f",
+        "fileNum": 5,
+        "id": "f1",
+        "occupied": true,
+        "piece": "bishopW",
+        "rank": "1",
+        "rankNum": 0
+    },
+    "g1": {
+        "file": "g",
+        "fileNum": 6,
+        "id": "g1",
+        "occupied": true,
+        "piece": "knightW",
+        "rank": "1",
+        "rankNum": 0
+    },
+    "h1": {
+        "file": "h",
+        "fileNum": 7,
+        "id": "h1",
+        "occupied": true,
+        "piece": "rookW",
+        "rank": "1",
+        "rankNum": 0
+    },
+    "a2": {
+        "file": "a",
+        "fileNum": 0,
+        "id": "a2",
+        "occupied": true,
+        "piece": "pawnW",
+        "rank": "2",
+        "rankNum": 1
+    },
+    "b2": {
+        "file": "b",
+        "fileNum": 1,
+        "id": "b2",
+        "occupied": true,
+        "piece": "pawnW",
+        "rank": "2",
+        "rankNum": 1
+    },
+    "c2": {
+        "file": "c",
+        "fileNum": 2,
+        "id": "c2",
+        "occupied": false,
+        "piece": "none",
+        "rank": "2",
+        "rankNum": 1
+    },
+    "d2": {
+        "file": "d",
+        "fileNum": 3,
+        "id": "d2",
+        "occupied": false,
+        "piece": "none",
+        "rank": "2",
+        "rankNum": 1
+    },
+    "e2": {
+        "file": "e",
+        "fileNum": 4,
+        "id": "e2",
+        "occupied": true,
+        "piece": "pawnW",
+        "rank": "2",
+        "rankNum": 1
+    },
+    "f2": {
+        "file": "f",
+        "fileNum": 5,
+        "id": "f2",
+        "occupied": true,
+        "piece": "pawnW",
+        "rank": "2",
+        "rankNum": 1
+    },
+    "g2": {
+        "file": "g",
+        "fileNum": 6,
+        "id": "g2",
+        "occupied": true,
+        "piece": "pawnW",
+        "rank": "2",
+        "rankNum": 1
+    },
+    "h2": {
+        "file": "h",
+        "fileNum": 7,
+        "id": "h2",
+        "occupied": true,
+        "piece": "pawnW",
+        "rank": "2",
+        "rankNum": 1
+    },
+    "a3": {
+        "file": "a",
+        "fileNum": 0,
+        "id": "a3",
+        "occupied": false,
+        "piece": "none",
+        "rank": "3",
+        "rankNum": 2
+    },
+    "b3": {
+        "file": "b",
+        "fileNum": 1,
+        "id": "b3",
+        "occupied": false,
+        "piece": "none",
+        "rank": "3",
+        "rankNum": 2
+    },
+    "c3": {
+        "file": "c",
+        "fileNum": 2,
+        "id": "c3",
+        "occupied": false,
+        "piece": "none",
+        "rank": "3",
+        "rankNum": 2
+    },
+    "d3": {
+        "file": "d",
+        "fileNum": 3,
+        "id": "d3",
+        "occupied": false,
+        "piece": "none",
+        "rank": "3",
+        "rankNum": 2
+    },
+    "e3": {
+        "file": "e",
+        "fileNum": 4,
+        "id": "e3",
+        "occupied": false,
+        "piece": "none",
+        "rank": "3",
+        "rankNum": 2
+    },
+    "f3": {
+        "file": "f",
+        "fileNum": 5,
+        "id": "f3",
+        "occupied": false,
+        "piece": "none",
+        "rank": "3",
+        "rankNum": 2
+    },
+    "g3": {
+        "file": "g",
+        "fileNum": 6,
+        "id": "g3",
+        "occupied": false,
+        "piece": "none",
+        "rank": "3",
+        "rankNum": 2
+    },
+    "h3": {
+        "file": "h",
+        "fileNum": 7,
+        "id": "h3",
+        "occupied": false,
+        "piece": "none",
+        "rank": "3",
+        "rankNum": 2
+    },
+    "a4": {
+        "file": "a",
+        "fileNum": 0,
+        "id": "a4",
+        "occupied": false,
+        "piece": "none",
+        "rank": "4",
+        "rankNum": 3
+    },
+    "b4": {
+        "file": "b",
+        "fileNum": 1,
+        "id": "b4",
+        "occupied": false,
+        "piece": "none",
+        "rank": "4",
+        "rankNum": 3
+    },
+    "c4": {
+        "file": "c",
+        "fileNum": 2,
+        "id": "c4",
+        "occupied": true,
+        "piece": "pawnW",
+        "rank": "4",
+        "rankNum": 3
+    },
+    "d4": {
+        "file": "d",
+        "fileNum": 3,
+        "id": "d4",
+        "occupied": true,
+        "piece": "pawnW",
+        "rank": "4",
+        "rankNum": 3
+    },
+    "e4": {
+        "file": "e",
+        "fileNum": 4,
+        "id": "e4",
+        "occupied": false,
+        "piece": "none",
+        "rank": "4",
+        "rankNum": 3
+    },
+    "f4": {
+        "file": "f",
+        "fileNum": 5,
+        "id": "f4",
+        "occupied": false,
+        "piece": "none",
+        "rank": "4",
+        "rankNum": 3
+    },
+    "g4": {
+        "file": "g",
+        "fileNum": 6,
+        "id": "g4",
+        "occupied": false,
+        "piece": "none",
+        "rank": "4",
+        "rankNum": 3
+    },
+    "h4": {
+        "file": "h",
+        "fileNum": 7,
+        "id": "h4",
+        "occupied": false,
+        "piece": "none",
+        "rank": "4",
+        "rankNum": 3
+    },
+    "a5": {
+        "file": "a",
+        "fileNum": 0,
+        "id": "a5",
+        "occupied": false,
+        "piece": "none",
+        "rank": "5",
+        "rankNum": 4
+    },
+    "b5": {
+        "file": "b",
+        "fileNum": 1,
+        "id": "b5",
+        "occupied": false,
+        "piece": "none",
+        "rank": "5",
+        "rankNum": 4
+    },
+    "c5": {
+        "file": "c",
+        "fileNum": 2,
+        "id": "c5",
+        "occupied": false,
+        "piece": "none",
+        "rank": "5",
+        "rankNum": 4
+    },
+    "d5": {
+        "file": "d",
+        "fileNum": 3,
+        "id": "d5",
+        "occupied": true,
+        "piece": "pawnB",
+        "rank": "5",
+        "rankNum": 4
+    },
+    "e5": {
+        "file": "e",
+        "fileNum": 4,
+        "id": "e5",
+        "occupied": false,
+        "piece": "none",
+        "rank": "5",
+        "rankNum": 4
+    },
+    "f5": {
+        "file": "f",
+        "fileNum": 5,
+        "id": "f5",
+        "occupied": false,
+        "piece": "none",
+        "rank": "5",
+        "rankNum": 4
+    },
+    "g5": {
+        "file": "g",
+        "fileNum": 6,
+        "id": "g5",
+        "occupied": false,
+        "piece": "none",
+        "rank": "5",
+        "rankNum": 4
+    },
+    "h5": {
+        "file": "h",
+        "fileNum": 7,
+        "id": "h5",
+        "occupied": false,
+        "piece": "none",
+        "rank": "5",
+        "rankNum": 4
+    },
+    "a6": {
+        "file": "a",
+        "fileNum": 0,
+        "id": "a6",
+        "occupied": false,
+        "piece": "none",
+        "rank": "6",
+        "rankNum": 5
+    },
+    "b6": {
+        "file": "b",
+        "fileNum": 1,
+        "id": "b6",
+        "occupied": false,
+        "piece": "none",
+        "rank": "6",
+        "rankNum": 5
+    },
+    "c6": {
+        "file": "c",
+        "fileNum": 2,
+        "id": "c6",
+        "occupied": false,
+        "piece": "none",
+        "rank": "6",
+        "rankNum": 5
+    },
+    "d6": {
+        "file": "d",
+        "fileNum": 3,
+        "id": "d6",
+        "occupied": false,
+        "piece": "none",
+        "rank": "6",
+        "rankNum": 5
+    },
+    "e6": {
+        "file": "e",
+        "fileNum": 4,
+        "id": "e6",
+        "occupied": false,
+        "piece": "none",
+        "rank": "6",
+        "rankNum": 5
+    },
+    "f6": {
+        "file": "f",
+        "fileNum": 5,
+        "id": "f6",
+        "occupied": false,
+        "piece": "none",
+        "rank": "6",
+        "rankNum": 5
+    },
+    "g6": {
+        "file": "g",
+        "fileNum": 6,
+        "id": "g6",
+        "occupied": false,
+        "piece": "none",
+        "rank": "6",
+        "rankNum": 5
+    },
+    "h6": {
+        "file": "h",
+        "fileNum": 7,
+        "id": "h6",
+        "occupied": false,
+        "piece": "none",
+        "rank": "6",
+        "rankNum": 5
+    },
+    "a7": {
+        "file": "a",
+        "fileNum": 0,
+        "id": "a7",
+        "occupied": true,
+        "piece": "pawnB",
+        "rank": "7",
+        "rankNum": 6
+    },
+    "b7": {
+        "file": "b",
+        "fileNum": 1,
+        "id": "b7",
+        "occupied": true,
+        "piece": "pawnB",
+        "rank": "7",
+        "rankNum": 6
+    },
+    "c7": {
+        "file": "c",
+        "fileNum": 2,
+        "id": "c7",
+        "occupied": true,
+        "piece": "pawnB",
+        "rank": "7",
+        "rankNum": 6
+    },
+    "d7": {
+        "file": "d",
+        "fileNum": 3,
+        "id": "d7",
+        "occupied": false,
+        "piece": "none",
+        "rank": "7",
+        "rankNum": 6
+    },
+    "e7": {
+        "file": "e",
+        "fileNum": 4,
+        "id": "e7",
+        "occupied": true,
+        "piece": "pawnB",
+        "rank": "7",
+        "rankNum": 6
+    },
+    "f7": {
+        "file": "f",
+        "fileNum": 5,
+        "id": "f7",
+        "occupied": true,
+        "piece": "pawnB",
+        "rank": "7",
+        "rankNum": 6
+    },
+    "g7": {
+        "file": "g",
+        "fileNum": 6,
+        "id": "g7",
+        "occupied": true,
+        "piece": "pawnB",
+        "rank": "7",
+        "rankNum": 6
+    },
+    "h7": {
+        "file": "h",
+        "fileNum": 7,
+        "id": "h7",
+        "occupied": true,
+        "piece": "pawnB",
+        "rank": "7",
+        "rankNum": 6
+    },
+    "a8": {
+        "file": "a",
+        "fileNum": 0,
+        "id": "a8",
+        "occupied": true,
+        "piece": "rookB",
+        "rank": "8",
+        "rankNum": 7
+    },
+    "b8": {
+        "file": "b",
+        "fileNum": 1,
+        "id": "b8",
+        "occupied": true,
+        "piece": "knightB",
+        "rank": "8",
+        "rankNum": 7
+    },
+    "c8": {
+        "file": "c",
+        "fileNum": 2,
+        "id": "c8",
+        "occupied": true,
+        "piece": "bishopB",
+        "rank": "8",
+        "rankNum": 7
+    },
+    "d8": {
+        "file": "d",
+        "fileNum": 3,
+        "id": "d8",
+        "occupied": true,
+        "piece": "queenB",
+        "rank": "8",
+        "rankNum": 7
+    },
+    "e8": {
+        "file": "e",
+        "fileNum": 4,
+        "id": "e8",
+        "occupied": true,
+        "piece": "kingB",
+        "rank": "8",
+        "rankNum": 7
+    },
+    "f8": {
+        "file": "f",
+        "fileNum": 5,
+        "id": "f8",
+        "occupied": true,
+        "piece": "bishopB",
+        "rank": "8",
+        "rankNum": 7
+    },
+    "g8": {
+        "file": "g",
+        "fileNum": 6,
+        "id": "g8",
+        "occupied": true,
+        "piece": "knightB",
+        "rank": "8",
+        "rankNum": 7
+    },
+    "h8": {
+        "file": "h",
+        "fileNum": 7,
+        "id": "h8",
+        "occupied": true,
+        "piece": "rookB",
+        "rank": "8",
+        "rankNum": 7
+    }
+}
