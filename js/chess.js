@@ -12,7 +12,7 @@ function returnBoard() {
     for (i = 0; i < 8; i++) {
         for (j = 0; j < 8; j++) {
             // Loop through all combinations of (0-7, 0-7)
-            boardInfo[returnSquare(horizontal[i], vertical[j]).id] = returnSquare(i, j);
+            boardInfo[returnSquare(horizontal[j], vertical[i]).id] = returnSquare(j, i);
             // Append data from returnSquare to the boardInfo object
         }
     }
@@ -51,4 +51,3 @@ function pieceType(x, y) {
         return square.children[0].id;
     }
 }
-

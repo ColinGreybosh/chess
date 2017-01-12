@@ -1,1 +1,1 @@
-# chess
+# Javascript Chess
