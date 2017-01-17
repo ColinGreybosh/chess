@@ -1,57 +1,82 @@
-// Declare arrays for chess board locations
-var horizontal  = [0, 1, 2, 3, 4, 5, 6, 7];
-var vertical    = horizontal;
-var file        = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h'];
-var rank        = ['1', '2', '3', '4', '5', '6', '7', '8'];
+var board,
+  game = new Chess();
 
-function returnBoard() {
-    // Declare empty object
-    var boardInfo = {};
-    for (i = 0; i < 8; i++) {
-        for (j = 0; j < 8; j++) {
-            // Loop through all combinations of (0-7, 0-7)
-            boardInfo[returnSquare(horizontal[j], vertical[i]).id] = returnSquare(j, i);
-            // Append data from returnSquare to the boardInfo object
-        }
-    }
-    return boardInfo;
-}
+var removeGreySquares = function() {
+  $('#board .square-55d63').css('background', '');
+};
 
-function initBoard(opening) {
-    for (i = 0; i < 64; i++) {
-        // Set IDs of chess pieces according to JSON information
-    }
-}
+var greySquare = function(square) {
+  var squareEl = $('#board .square-' + square);
 
-function returnSquare(x, y) {
-    // Creates an object of info on each square of the board
-    var squareInfo =
-    {
-        file:     file[x],
-        fileNum:  horizontal[x],
-        id:       file[x] + rank[y],
-        occupied: isOccupied(x, y),
-        piece:    pieceType(x, y),
-        rank:     rank[y],
-        rankNum:  vertical[y],
-    };
-    return squareInfo;
-}
+  var background = '#a9a9a9';
+  if (squareEl.hasClass('black-3c85d') === true) {
+    background = '#696969';
+  }
 
-function isOccupied(x, y) {
-    var square = document.getElementById(file[x] + rank[y]);
-    if (square.children[0].className == 'occupied') {
-        return true;
-    } else {
-        return false;
-    };
-}
+  squareEl.css('background', background);
+};
 
-function pieceType(x, y) {
-    var square = document.getElementById(file[x] + rank[y]);
-    if (isOccupied(x, y) == false) {
-        return 'none';
-    } else {
-        return square.children[0].id;
-    }
-}
+var onDragStart = function(source, piece) {
+  // do not pick up pieces if the game is over
+  // or if it's not that side's turn
+  if (game.game_over() === true ||
+      (game.turn() === 'w' && piece.search(/^b/) !== -1) ||
+      (game.turn() === 'b' && piece.search(/^w/) !== -1)) {
+    return false;
+  }
+};
+
+var onDrop = function(source, target) {
+  removeGreySquares();
+
+  // see if the move is legal
+  var move = game.move({
+    from: source,
+    to: target,
+    promotion: 'q' // NOTE: always promote to a queen for example simplicity
+  });
+
+  // illegal move
+  if (move === null) return 'snapback';
+};
+
+var onMouseoverSquare = function(square, piece) {
+  // get list of possible moves for this square
+  var moves = game.moves({
+    square: square,
+    verbose: true
+  });
+
+  // exit if there are no moves available for this square
+  if (moves.length === 0) return;
+
+  // highlight the square they moused over
+  greySquare(square);
+
+  // highlight the possible squares for this piece
+  for (var i = 0; i < moves.length; i++) {
+    greySquare(moves[i].to);
+  }
+};
+
+var onMouseoutSquare = function(square, piece) {
+  removeGreySquares();
+};
+
+var onSnapEnd = function() {
+  board.position(game.fen());
+};
+
+var cfg = {
+  draggable: true,
+  position: 'start',
+  onDragStart: onDragStart,
+  onDrop: onDrop,
+  onMouseoutSquare: onMouseoutSquare,
+  onMouseoverSquare: onMouseoverSquare,
+  onSnapEnd: onSnapEnd
+};
+board = ChessBoard('board', cfg);
+
+$('#startBtn').on('click', board.start);
+$('clearBtn').on('click', board.clear);
