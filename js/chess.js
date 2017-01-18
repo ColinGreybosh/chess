@@ -1,5 +1,6 @@
 var board,
-  game = new Chess();
+  game = new Chess(),
+  statusE1 = $('#status');
 
 var removeGreySquares = function() {
   $('#board .square-55d63').css('background', '');
@@ -30,11 +31,11 @@ var onDrop = function(source, target) {
   removeGreySquares();
 
   // see if the move is legal
-  var move = game.move({
-    from: source,
-    to: target,
-    promotion: 'q' // NOTE: always promote to a queen for example simplicity
-  });
+var move = game.move({
+from: source,
+to: target,
+promotion: 'q' // NOTE: always promote to a queen for example simplicity
+});
 
   // illegal move
   if (move === null) return 'snapback';
@@ -67,8 +68,12 @@ var onSnapEnd = function() {
   board.position(game.fen());
 };
 
+var restart = function() {
+  location.reload();
+};
+
 var cfg = {
-  pieceTheme: '../img/chesspieces/wikipedia/{piece}.png',
+  pieceTheme: 'img/chesspieces/wikipedia/{piece}.png',
   draggable: true,
   position: 'start',
   onDragStart: onDragStart,
@@ -79,4 +84,5 @@ var cfg = {
 };
 board = ChessBoard('board', cfg);
 
-$('#startBtn').on('click', board.start);
+$('#startBtn').on('click', restart);
+

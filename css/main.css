@@ -14,6 +14,7 @@ body {
     width: 100%;
     margin: 0;
 }
+
     .hContainer {
         display: flex;
         flex-direction: row;
@@ -22,6 +23,7 @@ body {
         width: 100%;
         margin: 0;
     }
+
         .header .button {
             margin: 0;
             padding: 0.3rem;
@@ -30,12 +32,14 @@ body {
             background: #FAFAFA;
             outline: 3px solid #DEDEDE;
         }
+
         .button {
             padding: 0 !important;
             display: flex;
             justify-content: space-around;
             align-content: center;
         }
+
             .button a {
                 margin: 0 auto;
                 width: 100%;
@@ -44,6 +48,7 @@ body {
                 color: black;
                 text-decoration: none;
             }
+
                 .button a p {
                     text-align: center;
                     height: 100%;
@@ -62,17 +67,22 @@ body {
     margin: 0 auto;
 }
 
-    .push, .controls {
-        width: 33%;
-        margin-top: calc(2rem + 3px);
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
+    .content {
+        margin: 1rem;
+        font-family: 'Segoe UI', sans-serif;
+        font-size: 1.3rem;
+        color: white;
     }
 
-    .controls {
-        display: flex;
-        flex-direction: column;
+        .content p {
+            margin: 0 0.5rem;
+        }
+
+    .push, .controls {
+        width: 33%;
+        margin-top: 2rem;
         margin-left: 0.5rem;
+        margin-right: 0.5rem;
     }
 
     .board {
@@ -80,7 +90,25 @@ body {
         margin-top: 2rem;
     }
 
+    .controls {
+        display: flex;
+        flex-direction: column;
+        margin-left: 0.5rem;
+    }
+        .controls * {
+            width: 100%;
+        }
+
+        .info {
+
+        }
+
         .controlBtn {
             background: #FAFAFA;
-            outline: 3px solid #DEDEDE;
         }
+
+            .controlBtn p {
+                font-family: 'Segoe UI', sans-serif;
+                font-size: 1.4rem;
+                margin: 0.1rem;
+            }
