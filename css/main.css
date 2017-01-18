@@ -24,7 +24,7 @@ body {
         margin: 0;
     }
 
-        .header .button {
+        .button {
             margin: 0;
             padding: 0.3rem;
             width: 33.33%;
@@ -35,9 +35,6 @@ body {
 
         .button {
             padding: 0 !important;
-            display: flex;
-            justify-content: space-around;
-            align-content: center;
         }
 
             .button a {
@@ -57,6 +54,12 @@ body {
                     font-size: 1.2rem;
                     margin: auto auto;
                 }
+
+        .icon {
+            height: 35px;
+            width: 35px;
+            margin-right: 3px;
+        }
 
 .container {
     display: flex;
@@ -80,7 +83,7 @@ body {
 
     .push, .controls {
         width: 33%;
-        margin-top: 2rem;
+        margin-top: calc(2rem + 3px);
         margin-left: 0.5rem;
         margin-right: 0.5rem;
     }
