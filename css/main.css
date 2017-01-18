@@ -7,6 +7,13 @@ body {
     background: url(../img/wood.jpg);
 }
 
+.hr {
+    width: 90%;
+    height: 2px;
+    background: #dedede;
+    margin: 0 auto;
+}
+
 .header {
     display: block;
     position: relative;
@@ -71,14 +78,14 @@ body {
 }
 
     .content {
-        margin: 1rem;
+        margin: 4rem 2rem;
         font-family: 'Segoe UI', sans-serif;
         font-size: 1.3rem;
         color: white;
     }
 
         .content p {
-            margin: 0 0.5rem;
+            margin: 1rem;
         }
 
     .push, .controls {
