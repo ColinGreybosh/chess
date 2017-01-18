@@ -79,4 +79,3 @@ var cfg = {
 board = ChessBoard('board', cfg);
 
 $('#startBtn').on('click', board.start);
-$('clearBtn').on('click', board.clear);
