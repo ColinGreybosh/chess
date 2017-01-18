@@ -26,15 +26,11 @@ body {
 
         .button {
             margin: 0;
-            padding: 0.3rem;
+            padding: 0;
             width: 33.33%;
             text-align: center;
             background: #FAFAFA;
             outline: 3px solid #DEDEDE;
-        }
-
-        .button {
-            padding: 0 !important;
         }
 
             .button a {
@@ -115,3 +111,7 @@ body {
                 font-size: 1.4rem;
                 margin: 0.1rem;
             }
+
+@media screen and (max-width: 650px) {
+
+}
