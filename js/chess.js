@@ -68,6 +68,7 @@ var onSnapEnd = function() {
 };
 
 var cfg = {
+  pieceTheme: '/img/chesspieces/wikipedia/{piece}.png',
   draggable: true,
   position: 'start',
   onDragStart: onDragStart,
