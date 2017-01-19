@@ -18,7 +18,7 @@
         <link rel="icon" type="image/png" href="../icon.png">
         <script src="../js/json3.min.js" defer></script>
         <script src="../js/chessboard.min.js" defer></script>
-        <script src="../js/chess.js" defer></script>
+        <script src="js/chessOpenings.js" defer></script>
 
         <!-- Web and Unix Links -->
         <link rel="stylesheet" href="/css/main.css">
@@ -27,7 +27,7 @@
         <link rel="icon" type="image/png" href="/icon.png">
         <script src="/js/json3.min.js" defer></script>
         <script src="/js/chessboard.min.js" defer></script>
-        <script src="/js/chess.js" defer></script>
+        <script src="js/chessOpenings.js" defer></script>
     </head>
     <body>
 
@@ -71,13 +71,32 @@
         <!-- Webpage Content -->
         <div class="container">
 
-            <!-- Container For Board -->
-            <div>
-
-                <!-- Div used to create chess board -->
-                <div id="board" style="width: 550px"></div>
+            <!-- Div used to create chess board -->
+            <div class="flex2" id="board1" style="order: 0"></div>
+            <div class="flex2" id="boardTxt1" style="order: 1">
+                <h1></h1>
+                <p></p>
             </div>
-
+            <div class="flex2" id="board2" style="order: 2"></div>
+            <div class="flex2" id="boardTxt2" style="order: 3">
+                <h1></h1>
+                <p></p>
+            </div>
+            <div class="flex2" id="board3" style="order: 4"></div>
+            <div class="flex2" id="boardTxt3" style="order: 5">
+                <h1></h1>
+                <p></p>
+            </div>
+            <div class="flex2" id="board4" style="order: 6"></div>
+            <div class="flex2" id="boardTxt4" style="order: 7">
+                <h1></h1>
+                <p></p>
+            </div>
+            <div class="flex2" id="board5" style="order: 8"></div>
+            <div class="flex2" id="boardTxt5" style="order: 9">
+                <h1></h1>
+                <p></p>
+            </div>
         </div>
     </body>
 </html>
