@@ -8,7 +8,7 @@ body {
 }
 
 .hr {
-    width: 90%;
+    width: 90% !important;
     height: 2px;
     background: #dedede;
     margin: 0 auto;
@@ -113,5 +113,7 @@ body {
             }
 
 .flex2 {
-    width: 50%;
+    width: 50% !important;
+    margin: 0;
+
 }
