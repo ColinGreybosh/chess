@@ -84,13 +84,6 @@ body {
             margin: 1rem;
         }
 
-    .push, .controls {
-        width: 33%;
-        margin-top: calc(2rem + 3px);
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-    }
-
     .board {
         margin: 0 auto;
         margin-top: 2rem;
@@ -118,7 +111,3 @@ body {
                 font-size: 1.4rem;
                 margin: 0.1rem;
             }
-
-@media screen and (max-width: 650px) {
-
-}

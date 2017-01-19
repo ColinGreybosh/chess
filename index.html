@@ -7,86 +7,80 @@
         <title>Chess</title>
 
         <!-- Online References -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js" defer></script>
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" defer></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.10.2/chess.js" defer></script>
 
         <!-- Local and Windows Links -->
-        <link rel="stylesheet" href="css/main.css">
-        <link rel="stylesheet" href="css/chess-pieces.css">
-        <link rel="stylesheet" href="css/chessboard.min.css">
-        <link rel="icon" type="image/png" href="icon.png">
-        <script src="js/json3.min.js" defer></script>
-        <script src="js/chessboard.min.js" defer></script>
-        <script src="js/chess.js" defer></script>
+            <link rel="stylesheet" href="css/main.css">
+            <link rel="stylesheet" href="css/chess-pieces.css">
+            <link rel="stylesheet" href="css/chessboard.min.css">
+            <link rel="icon" type="image/png" href="icon.png">
+            <script src="js/json3.min.js" defer></script>
+            <script src="js/chessboard.min.js" defer></script>
+            <script src="js/chess.js" defer></script>
 
         <!-- Web and Unix Links -->
-        <link rel="stylesheet" href="/css/main.css">
-        <link rel="stylesheet" href="/css/chess-pieces.css">
-        <link rel="stylesheet" href="/css/chessboard.min.css">
-        <link rel="icon" type="image/png" href="/icon.png">
-        <script src="/js/json3.min.js" defer></script>
-        <script src="/js/chessboard.min.js" defer></script>
-        <script src="/js/chess.js" defer></script>
+            <link rel="stylesheet" href="/css/main.css">
+            <link rel="stylesheet" href="/css/chess-pieces.css">
+            <link rel="stylesheet" href="/css/chessboard.min.css">
+            <link rel="icon" type="image/png" href="/icon.png">
+            <script src="/js/json3.min.js" defer></script>
+            <script src="/js/chessboard.min.js" defer></script>
+            <script src="/js/chess.js" defer></script>
     </head>
     <body>
+        <!-- Header for game start, restart, etc. -->
+            <div class="header">
+                <div class="hContainer">
 
-    <!-- Header for game start, restart, etc. -->
-        <div class="header">
-            <div class="hContainer">
+                    <div class="button icon">
+                        <a href="https://github.com/ColinGreybosh/chess" target="_blank">
+                            <img class="icon" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
+                        </a>
+                    </div>
 
-                <div class="button icon">
-                    <a href="https://github.com/ColinGreybosh/chess" target="_blank">
-                        <img class="icon" src="https://assets-cdn.github.com/images/modules/logos_page/GitHub-Mark.png" alt="GitHub">
-                    </a>
+                    <div class="button">
+                        <a href=".">
+                            <p>Home</p>
+                        </a>
+                    </div>
+
+                    <div class="button">
+                        <a href="/chess/about/">
+                            <p>About</p>
+                        </a>
+                    </div>
+
+                    <div class="button">
+                        <a href="/chess/openings/">
+                            <p>Openings</p>
+                        </a>
+                    </div>
+
+                    <div class="button">
+                        <a href="/chess/moves/">
+                            <p>Moves</p>
+                        </a>
+                    </div>
+
+                    <div class="button">
+                        <a class="controlBtn" id="restartBtn" href="#">
+                            <p>Restart Game</p>
+                        </a>
+                    </div>
+
                 </div>
-
-                <div class="button">
-                    <a href=".">
-                        <p>Home</p>
-                    </a>
-                </div>
-
-                <div class="button">
-                    <a href="/chess/about/">
-                        <p>About</p>
-                    </a>
-                </div>
-
-                <div class="button">
-                    <a href="/chess/openings/">
-                        <p>Openings</p>
-                    </a>
-                </div>
-
-                <div class="button">
-                    <a href="/chess/moves/">
-                        <p>Moves</p>
-                    </a>
-                </div>
-
-                <div class="button">
-                    <a class="controlBtn" id="startBtn" href="#">
-                        <p>Restart Game</p>
-                    </a>
-                </div>
-
-            </div>
-        </div>
-
-    <!-- Webpage Content -->
-        <div class="container">
-
-            <div class="push"></div>
-
-            <!-- Container For Board -->
-            <div class="board">
-
-                <!-- Div used to create chess board -->
-                <div id="board" style="width: 40vw"></div>
             </div>
 
-            <div class="controls"></div>
-        </div>
+        <!-- Webpage Content -->
+            <div class="container">
+                <!-- Container For Board -->
+                <div class="board" id="boardCont">
+                    <!-- This #board div currently has no specified width, but once the page is loaded,
+                    JS will decide the size based on screen orientation. -->
+                    <div id="board"></div>
+                </div>
+            </div>
     </body>
 </html>
