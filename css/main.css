@@ -114,11 +114,23 @@ body {
                 margin: 0.1rem;
             }
 
+.flex1 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+}
+
 .flex2 {
     display: flex;
     justify-content: space-around;
     width: 50%;
     margin: 0;
+}
+
+.column {
+    flex-direction: column;
+    width: 33%;
 }
 
 .strat {
