@@ -133,6 +133,24 @@ body {
     margin: 0;
 }
 
+.container-moves {
+    padding: 20px;
+    font-size: 24px;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.container-moves .image {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.container-moves .image img {
+    width: 100%;
+}
+
 #openings {
     display: flex;
     margin: 2rem 4rem;
